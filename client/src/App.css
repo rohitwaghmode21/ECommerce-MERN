@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Merriweather&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* CSS of Navbar */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #fbc531;
+    list-style: none;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    padding: 1rem;
+}
+.navbar a{
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    color: black;
+    font-size: larger;
+    font-weight: 400;
+    padding: 1rem;
+}
+.navbar button{
+    width: 8rem;
+    height: 2rem;
+    background-color: #f53b57;
+    border: none;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    color: aliceblue;
+    cursor: pointer;
+    transition: width 1s;
+    transition-delay: 1s;
+}
+.navbar button:hover{
+    background-color: #33d9b2;
+    border: none;
+    width: 10rem;
+}
+/* CSS of Footer */
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: #ff9f43;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+}
+.footer-content{
+    align-items: center;
+    align-self: auto;
+}
+/* CSS of Register Data */
+.register{
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Lora', serif;
+    font-weight: 800;
+    font-size: 2rem;
+}
+.register-data{
+    padding: 1rem;
+}
+.register-data input{
+    padding: 0.5rem;
+    width: 20rem;
+    margin: 1rem;
+    font-family: 'Lora', serif;
+}
+.register-data button{
+    width: 20rem;
+    height: 2rem;
+    font-family: 'Lora', serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    background-color: #00a8ff;
+    border: none;
+    transition: width 1s;
+    transition-delay: 1s;
+}
+.register-data button:hover{
+    background-color: #4cd137;
+    border: none;
+    width: 22rem;
+}
+/* CSS of Login Page */
+.login-data{
+    width: 100vw;
+    height: 80vh;
+}
+.login-data h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 800;
+    font-family: 'Lora', serif;
+    font-weight: 800;
+    padding: 0.8rem;
+}
+.login-data .login-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.login-data .login-page input{
+    width: 20rem;
+    padding: 0.5rem;
+    font-family: 'Lora', serif;
+    margin: 1rem;
+}
+.login-data .login-page button{
+    width: 20rem;
+    height: 2rem;
+    font-family: 'Lora', serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    background-color: #00a8ff;
+    border: none;
+    margin: 1rem;
+    transition: width 1s;
+    transition-delay: 1s;
+}
+.login-data .login-page button:hover{
+    background-color: #4cd137;
+    border: none;
+    cursor: pointer;
+    width: 22rem;
+}
+/* CSS of signup and login navbar */
+.nav-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+/* CSS of logo image */
+.logo-img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* CSS of Add Product */
+.product{
+    text-align: center;
+    font-family: 'Lora', serif;
+    padding-top: 0.5rem;
+}
+.product h1{
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.product-data{
+    margin-top: 0.5rem;
+}
+.product-data input{
+    padding: 0.5rem;
+    width: 20rem;
+    font-family: 'Lora', serif;
+}
+.product button{
+    width: 20rem;
+    height: 2rem;
+    font-family: 'Lora', serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    background-color: #00a8ff;
+    border: none;
+    margin-top: 1rem;
+    transition: width 1s;
+    transition-delay: 1s;
+}
+.product button:hover{
+    background-color: #4cd137;
+    border: none;
+    width: 22rem;
+}
+/* CSS of Add Product Page Error in Input Fileds */
+.product-data .error-msg{
+    color: #eb2f06;
+    font-weight: 200;
+    font-size: medium;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+/* CSS of Product List */
+.product-list{
+    text-align: center;
+}
+.product-list h1{
+    padding: 0.5rem;
+    font-family: 'Lora', serif;
+}
+.product-list-table-header{
+    display: inline-block;
+    padding: 0.5rem;
+}
+table, tr, th{
+    border: 0.1rem solid black;
+    padding: 0.8rem;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    font-family: 'Lora', serif;
+    font-size: 1.8rem;
+    color: #eb2f06;
+    font-weight: 800;
+}
+table, tr, td{
+    border: 0.1rem solid black;
+    padding: 0.8rem;
+    border-spacing: 0;
+    border-collapse: collapse;
+    color: black;
+    font-size: 1rem;
+}
+.product-list-table-header button{
+    width: 10rem;
+    height: 1.8rem;
+    font-family: 'Lora', serif;
+    background-color: #4cd137;
+    border: none;
+    transition: width 1s;
+    transition-delay: 1s;
+    cursor: pointer;
+}
+.product-list-table-header button:hover{
+    border: none;
+    background-color: #e84118;
+    width: 12rem;
+}
+.product-list-table-header .delete-btn button{
+    background-color: #eb4d4b;
+}
+.product-list-table-header .delete-btn button:hover{
+    background-color: #4cd137;
+}
+.product-list-table-header .update-btn button{
+    background-color: #ffcccc;
+}
+.product-list-table-header .update-btn button:hover{
+    background-color: #7efff5;
+}
+.product-list .search-product input{
+    padding: 0.5rem;
+    width: 20rem;
+    font-family: 'Lora', serif;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+}
+.product-list .search-product button{
+    font-family: 'Lora', serif;
+    width: 6rem;
+    height: 2.3rem;
+    border: none;
+    background-color: #6c5ce7;
+    color: white;
+    cursor: pointer;
+}
+.product-list .search-product button:hover{
+    background-color: #e84393;
+    border: none;
+}
+.product-list .search-product .search-err{
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e84118;
+}
+.no-result h3{
+    align-content: center;
+    color: #e84118;
+}
+/* CSS of Update Product */
+.update{
+    text-align: center;
+    font-family: 'Lora', serif;
+    padding-top: 0.5rem;
+}
+.update h1{
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.update-data{
+    margin-top: 0.5rem;
+    padding: 0.6rem;
+}
+.update-data input{
+    padding: 0.5rem;
+    width: 20rem;
+    font-family: 'Lora', serif;
+}
+.update button{
+    width: 20rem;
+    height: 2rem;
+    font-family: 'Lora', serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    background-color: #00a8ff;
+    border: none;
+    margin-top: 1rem;
+    transition: width 1s;
+    transition-delay: 1s;
+}
+.update button:hover{
+    background-color: #4cd137;
+    border: none;
+    width: 22rem;
+}
+/* CSS style for Update product error in input field */
+.update-data .error-msg{
+    color: #eb2f06;
+    font-weight: 200;
+    font-size: medium;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
